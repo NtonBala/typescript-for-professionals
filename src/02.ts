@@ -1,19 +1,11 @@
-// Instance types
+// Primitive types
 
-const regexp: RegExp = new RegExp('ab+c');
-const array: Array<number> = [1, 2, 3];
-const set: Set<number> = new Set([1, 2, 3]);
+let isPresent: boolean = false;
+let magic: number = 6.66;
+let hello: string = 'world';
 
-// * A first in first out collection
-class Queue<T> {
-  private data: Array<T> = [];
+let notDefined: undefined = undefined;
+let notPresent: null = null;
 
-  push(item: T) {
-    this.data.push(item);
-  }
-  pop(): T | undefined {
-    return this.data.shift();
-  }
-}
-
-let queue: Queue<number> = new Queue();
+let penta: symbol = Symbol('star');
+let biggy: bigint = 24n;

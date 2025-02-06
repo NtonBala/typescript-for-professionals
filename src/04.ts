@@ -1,6 +1,4 @@
-// Object types and type aliases
+// Arrays and tuples
 
-type Point = { x: number; y: number };
-
-let center: Point = { x: 0, y: 0 };
-let unit: Point = { x: 1, y: 1 };
+const arr: number[] = [1, 2, 3];
+let tuple: [number, number] = [0, 0];
