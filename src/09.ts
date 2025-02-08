@@ -20,3 +20,15 @@ class Bird extends Animal {
     console.log(`${this.name} flew ${distanceInMeters}m.`);
   }
 }
+
+class Vehicle {
+  #name: string;
+
+  constructor(name: string) {
+    this.#name = name;
+  }
+
+  move(distanceInKm: number) {
+    console.log(`${this.#name} moved ${distanceInKm}`);
+  }
+}
