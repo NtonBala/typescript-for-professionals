@@ -12,9 +12,18 @@ class Queue {
   }
 }
 
-const queue = new Queue();
+class NumberQueue extends Queue {
+  push(item: number) {
+    super.push(item);
+  }
+  pop(): number {
+    return super.pop();
+  }
+}
+
+const queue = new NumberQueue();
 queue.push(123);
-queue.push('Hellos world');
+queue.push(456);
 
 console.log(queue.pop().toPrecision(1));
-console.log(queue.pop().toPrecision(1)); // Runtime Error
+console.log(queue.pop().toPrecision(1));
