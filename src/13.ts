@@ -1,10 +1,14 @@
 function loadString() {}
 function loadNumber() {}
 
-let someLegacyVariable: any;
+let someLegacyVariable: unknown;
 
 someLegacyVariable = loadString();
-console.log(someLegacyVariable.trim());
+if (typeof someLegacyVariable === 'string') {
+  console.log(someLegacyVariable.trim());
+}
 
 someLegacyVariable = loadNumber();
-console.log(someLegacyVariable.toFixed(2));
+if (typeof someLegacyVariable === 'number') {
+  console.log(someLegacyVariable.toFixed(2));
+}
