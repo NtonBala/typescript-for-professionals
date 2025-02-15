@@ -1,5 +1,5 @@
 // Modules
-import { isPalindrome } from './utils';
+import * as utils from './utils';
 
-console.log(isPalindrome('madam')); // true
-console.log(isPalindrome('banana')); // false
+console.log(utils.isPalindrome('madam')); // true
+console.log(utils.isPalindrome('banana')); // false
